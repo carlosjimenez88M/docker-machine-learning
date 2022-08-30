@@ -72,5 +72,5 @@ docker buidl -t docker-model -f Dockerfile .
 For running :
 
 ```{docker}
-docker run docker-model python3 inference.py
+docker run docker-model python3 model.py
 ```

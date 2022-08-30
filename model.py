@@ -59,8 +59,11 @@ housing_prepared = full_pipeline.fit_transform(housing)
 #%%
 
 param_grid = [
-    {'n_estimators': [3, 10, 30], 'max_features': [2, 4, 6, 8,10]},
-    {'bootstrap': [False], 'n_estimators': [3, 10], 'max_features': [2, 3, 4]},
+    {'n_estimators': [3,5,10,15,20,25,30], 
+    'max_features': [2, 4, 6, 8,10]},
+    {'bootstrap': [False,True],
+     'n_estimators': [3, 10], 
+     'max_features': [2, 3, 4,5,6,7,8]},
   ]
 
 forest_reg = RandomForestRegressor(random_state=42)
